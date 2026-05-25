@@ -7,6 +7,7 @@ import TestimonialsSection from '@/components/TestimonialsSection'
 import WhyChooseSection from '@/components/WhyChooseSection'
 import VisionMissionSection from '@/components/VisionMissionSection'
 import CTASection from '@/components/CTASection'
+import BlogsSection from '@/components/BlogsSection'
 import Footer from '@/components/Footer'
 import ScrollToTopButton from '@/components/ScrollToTopButton'
 
@@ -47,6 +48,7 @@ export default function HomePage() {
         <TestimonialsSection />
         <WhyChooseSection />
         <VisionMissionSection />
+        <BlogsSection />
         <CTASection />
       </main>
 

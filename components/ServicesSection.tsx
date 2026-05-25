@@ -11,27 +11,32 @@ const services = [
   {
     title: 'Graphic Design',
     description:
-      "We value them most since they are your Brand's bearer We give you the relative design for your brand or Business..",
+      "We value them most since they are your Brand's bearer. We give you compelling, on-brand design that makes your business stand out.",
+    href: '/services/graphic-design',
   },
   {
     title: 'Web Design & Development',
     description:
-      "We're web design company, our web design team creates custom designs that are UI/UX focused..",
+      "Our web design team creates custom, UI/UX-focused websites that are responsive, fast, and built to convert visitors into customers.",
+    href: '/services/web-design',
   },
   {
     title: 'App Development',
     description:
-      'We provide rich and Interactive experience by our Advanced Standards..',
+      'We deliver rich, interactive mobile and web applications built to the highest standards for performance and user experience.',
+    href: '/services/app-development',
   },
   {
     title: 'Search Engine Optimization ( SEO )',
     description:
-      'Search engine optimization (SEO) drives targeted traffic to your site by ..',
+      'We drive targeted organic traffic to your site through proven on-page, off-page, and technical SEO strategies.',
+    href: '/services/seo',
   },
   {
-    title: 'E com Web Development',
+    title: 'E-Commerce Development',
     description:
-      'Redias a trusted name for providing assistants. Initially their main objective was to ensure service..',
+      'We build robust, conversion-optimised e-commerce platforms tailored to your products, workflow, and growth goals.',
+    href: '/services/web-design',
   },
 ]
 
@@ -40,17 +45,19 @@ const bezier: [number, number, number, number] = [0.22, 1, 0.36, 1]
 function ServiceCard({
   title,
   description,
+  href,
   index,
   inView,
 }: {
   title: string
   description: string
+  href: string
   index: number
   inView: boolean
 }) {
   return (
     <motion.div
-      className="relative pt-7"
+      className="relative pt-7 h-full"
       initial={{ opacity: 0, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.6, ease: bezier, delay: index * 0.12 }}
@@ -68,7 +75,7 @@ function ServiceCard({
         <h3 className="font-heading text-[#F15A22] text-lg mb-3">{title}</h3>
         <p className="font-body text-gray-600 text-sm leading-relaxed flex-1">{description}</p>
         <a
-          href="#services"
+          href={href}
           className="inline-block mt-4 text-gray-800 text-sm font-medium hover:text-[#F15A22] transition-colors duration-200"
         >
           View More &rarr;
@@ -79,10 +86,8 @@ function ServiceCard({
 }
 
 export default function ServicesSection() {
-  const topRef = useRef(null)
-  const bottomRef = useRef(null)
-  const topInView = useInView(topRef, { once: true, margin: '-60px 0px' })
-  const bottomInView = useInView(bottomRef, { once: true, margin: '-60px 0px' })
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true, margin: '-60px 0px' })
 
   return (
     <section id="services" className="relative overflow-hidden" aria-label="Our services">
@@ -125,24 +130,17 @@ export default function ServicesSection() {
           </h2>
         </AnimateOnScroll>
 
-        {/* Row 1 — 3 cards (icon badges sit in white zone, bodies straddle into dark zone) */}
+        {/* Unified card grid — flex-wrap so last row is centred automatically */}
         <div
-          ref={topRef}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10 mb-10"
+          ref={ref}
+          className="flex flex-wrap justify-center gap-6 mb-16"
         >
-          {services.slice(0, 3).map((s, i) => (
-            <ServiceCard key={s.title} {...s} index={i} inView={topInView} />
-          ))}
-        </div>
-
-        {/* Row 2 — 2 cards centered, fully in dark zone */}
-        <div
-          ref={bottomRef}
-          className="flex flex-col sm:flex-row justify-center gap-6 mb-16"
-        >
-          {services.slice(3).map((s, i) => (
-            <div key={s.title} className="w-full sm:w-[340px]">
-              <ServiceCard {...s} index={i} inView={bottomInView} />
+          {services.map((s, i) => (
+            <div
+              key={s.title}
+              className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+            >
+              <ServiceCard {...s} index={i} inView={inView} />
             </div>
           ))}
         </div>

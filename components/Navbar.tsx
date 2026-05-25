@@ -20,7 +20,7 @@ const navLinks = [
   { label: 'Our Services', href: '/services', dropdown: true },
   { label: 'Our Clients', href: '/clients', dropdown: false },
   { label: 'Contact', href: '/contact', dropdown: false },
-  { label: 'Blogs', href: '/#blogs', dropdown: false },
+  { label: 'Blogs', href: '/blog', dropdown: false },
 ]
 
 export default function Navbar() {
