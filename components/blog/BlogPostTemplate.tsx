@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import type { Blog } from '@/lib/blog-data'
 import { blogs } from '@/lib/blog-data'
 
@@ -65,6 +66,21 @@ export default function BlogPostTemplate({ blog }: { blog: Blog }) {
         </div>
       </div>
 
+      {/* ── Cover Image ── */}
+      <section className="bg-white pt-12">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden shadow-lg">
+            <Image
+              src={blog.coverImage}
+              alt={blog.title}
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ── Article excerpt lead ── */}
       <section className="bg-white pt-12 pb-4">
         <div className="max-w-3xl mx-auto px-6">
@@ -105,16 +121,22 @@ export default function BlogPostTemplate({ blog }: { blog: Blog }) {
                   href={`/blog/${b.slug}`}
                   className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition-shadow duration-300"
                 >
-                  <div
-                    className={`bg-gradient-to-br ${b.coverColor} h-40 flex items-end p-5`}
-                  >
-                    <span
-                      className={`text-xs font-semibold px-3 py-1 rounded-full ${
-                        categoryColors[b.category] ?? 'bg-white text-gray-700'
-                      }`}
-                    >
-                      {b.category}
-                    </span>
+                  <div className="relative h-48 w-full overflow-hidden">
+                    <Image
+                      src={b.coverImage}
+                      alt={b.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute bottom-4 left-4">
+                      <span
+                        className={`text-xs font-semibold px-3 py-1 rounded-full ${
+                          categoryColors[b.category] ?? 'bg-white text-gray-700'
+                        }`}
+                      >
+                        {b.category}
+                      </span>
+                    </div>
                   </div>
                   <div className="flex-1 p-6">
                     <p className="font-body text-gray-400 text-xs mb-2">

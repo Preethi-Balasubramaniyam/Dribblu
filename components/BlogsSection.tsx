@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { blogs } from '@/lib/blog-data'
 import AnimateOnScroll from './ui/AnimateOnScroll'
 
@@ -39,17 +40,23 @@ export default function BlogsSection() {
                 href={`/blog/${blog.slug}`}
                 className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition-shadow duration-300 h-full"
               >
-                {/* Colour cover */}
-                <div
-                  className={`bg-gradient-to-br ${blog.coverColor} h-44 flex items-end p-5`}
-                >
-                  <span
-                    className={`text-xs font-semibold px-3 py-1 rounded-full ${
-                      categoryColors[blog.category] ?? 'bg-white text-gray-700'
-                    }`}
-                  >
-                    {blog.category}
-                  </span>
+                {/* Cover image */}
+                <div className="relative h-48 w-full overflow-hidden">
+                  <Image
+                    src={blog.coverImage}
+                    alt={blog.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute bottom-4 left-4">
+                    <span
+                      className={`text-xs font-semibold px-3 py-1 rounded-full ${
+                        categoryColors[blog.category] ?? 'bg-white text-gray-700'
+                      }`}
+                    >
+                      {blog.category}
+                    </span>
+                  </div>
                 </div>
 
                 <div className="flex flex-col flex-1 p-6">

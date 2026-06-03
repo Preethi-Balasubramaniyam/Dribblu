@@ -18,6 +18,8 @@ export default function ContactForm() {
     requirements: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -25,9 +27,48 @@ export default function ContactForm() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
   }
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
+    setIsSubmitting(true)
+    setError('')
+
+    try {
+      // Web3Forms endpoint
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'da470ede-d3d1-4a94-a2d0-780812416d8b', // Get free key from https://web3forms.com
+          name: form.fullName,
+          organization: form.orgName,
+          phone: form.phone,
+          email: form.email,
+          message: form.requirements,
+          subject: `New Contact Form Submission from ${form.fullName}`,
+        }),
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setSubmitted(true)
+        setForm({
+          fullName: '',
+          orgName: '',
+          phone: '',
+          email: '',
+          requirements: '',
+        })
+      } else {
+        setError('Something went wrong. Please try again.')
+      }
+    } catch (err) {
+      setError('Failed to send message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -55,9 +96,15 @@ export default function ContactForm() {
             </svg>
           </div>
           <h3 className="font-heading text-[#F15A22] text-2xl mb-2">Message Sent!</h3>
-          <p className="font-body text-gray-600 text-sm">
+          <p className="font-body text-gray-600 text-sm mb-6">
             We&apos;ll get back to you within 24 hours.
           </p>
+          <button
+            onClick={() => setSubmitted(false)}
+            className="text-[#F15A22] font-body font-semibold text-sm hover:underline"
+          >
+            Send another message
+          </button>
         </motion.div>
       ) : (
         <form onSubmit={handleSubmit} noValidate>
@@ -106,13 +153,20 @@ export default function ContactForm() {
             className={`${inputClass} resize-none mb-6`}
           />
 
+          {error && (
+            <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg">
+              <p className="text-red-600 text-sm font-body">{error}</p>
+            </div>
+          )}
+
           <motion.button
             type="submit"
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            className="bg-[#F15A22] text-white font-body font-semibold px-10 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F15A22]"
+            disabled={isSubmitting}
+            whileHover={{ scale: isSubmitting ? 1 : 1.03 }}
+            whileTap={{ scale: isSubmitting ? 1 : 0.97 }}
+            className="bg-[#F15A22] text-white font-body font-semibold px-10 py-3 rounded-lg hover:bg-orange-600 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F15A22] disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Submit Now
+            {isSubmitting ? 'Sending...' : 'Submit Now'}
           </motion.button>
         </form>
       )}

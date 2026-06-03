@@ -41,7 +41,7 @@ export default function AboutIntro() {
           <AnimateOnScroll variants={slideRight}>
             <div className="relative w-full max-w-lg mx-auto" style={{ height: '380px' }}>
               {/* Back card */}
-              <div className="absolute top-5 left-0 right-10 bottom-0 rounded-2xl overflow-hidden border-4 border-white shadow-lg z-0">
+              {/* <div className="absolute top-5 left-0 right-10 bottom-0 rounded-2xl overflow-hidden border-4 border-white shadow-lg z-0">
                 <Image
                   src={teamImage}
                   alt="Dribblu team at work"
@@ -49,7 +49,7 @@ export default function AboutIntro() {
                   className="object-cover"
                   sizes="(max-width: 768px) 90vw, 450px"
                 />
-              </div>
+              </div> */}
               {/* Front card */}
               <div className="absolute top-0 left-10 right-0 bottom-5 rounded-2xl overflow-hidden border-4 border-white shadow-2xl z-10">
                 <Image

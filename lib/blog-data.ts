@@ -6,6 +6,7 @@ export interface Blog {
   date: string
   readTime: string
   coverColor: string // tailwind bg class used as placeholder cover
+  coverImage: string // path to cover image
   body: string // HTML string for the blog body
 }
 
@@ -19,6 +20,7 @@ export const blogs: Blog[] = [
     date: 'April 28, 2026',
     readTime: '6 min read',
     coverColor: 'from-orange-500 to-orange-800',
+    coverImage: '/assets/blogs/web-design-trends-2026.png',
     body: `
       <p>The digital landscape evolves faster than ever, and 2026 is no exception. Businesses that stay ahead of design trends gain a decisive competitive edge. Here are the ten trends every forward-thinking brand should know.</p>
 
@@ -64,6 +66,7 @@ export const blogs: Blog[] = [
     date: 'April 14, 2026',
     readTime: '7 min read',
     coverColor: 'from-blue-600 to-blue-900',
+    coverImage: '/assets/blogs/seo-backbone-digital-strategy.png',
     body: `
       <p>Imagine a 24/7 salesperson who works for free, never takes a day off, and reaches customers precisely when they are searching for what you offer. That is what a well-executed SEO strategy delivers.</p>
 
@@ -99,6 +102,7 @@ export const blogs: Blog[] = [
     date: 'March 30, 2026',
     readTime: '8 min read',
     coverColor: 'from-purple-600 to-purple-900',
+    coverImage: '/assets/blogs/app-development-idea-to-launch.png',
     body: `
       <p>Every successful app starts as an idea scribbled on a napkin or typed into a note app at 2 a.m. Transforming that idea into a polished, live product requires a clear process. Here is a blueprint.</p>
 
@@ -138,6 +142,7 @@ export const blogs: Blog[] = [
     date: 'March 15, 2026',
     readTime: '5 min read',
     coverColor: 'from-pink-500 to-rose-700',
+    coverImage: '/assets/blogs/graphic-design-builds-brand-identity.png',
     body: `
       <p>When someone spots your brand's colour on a billboard before they even read the name, that is the power of great graphic design. Visual identity is the silent ambassador of your business.</p>
 
@@ -171,6 +176,7 @@ export const blogs: Blog[] = [
     date: 'February 22, 2026',
     readTime: '5 min read',
     coverColor: 'from-teal-500 to-cyan-800',
+    coverImage: '/assets/blogs/custom-website-business-2026.png',
     body: `
       <p>Website builders have democratised the web. Anyone can launch a site in an afternoon — so why invest in a custom-built website? Because "anyone can do it" is exactly the problem.</p>
 
@@ -204,6 +210,7 @@ export const blogs: Blog[] = [
     date: 'January 18, 2026',
     readTime: '4 min read',
     coverColor: 'from-yellow-500 to-orange-600',
+    coverImage: '/assets/blogs/boost-website-performance.png',
     body: `
       <p>Google's research is unambiguous: page speed directly impacts bounce rate, engagement, and revenue. A one-second delay in mobile load time can cut conversions by up to 20%. Here are five optimisations with the highest impact-to-effort ratio.</p>
 
