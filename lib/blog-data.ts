@@ -54,7 +54,7 @@ export const blogs: Blog[] = [
       <h2>10. Sustainability-Driven Design</h2>
       <p>Lean code, optimised images, and low-carbon hosting are becoming brand differentiators as eco-conscious consumers scrutinise digital footprints.</p>
 
-      <p>At Dribblu, we incorporate the right mix of these trends for every client — balancing aesthetics with performance and accessibility. <a href="/contact">Get in touch</a> to see how we can modernise your digital presence.</p>
+      <p>At Dribblu Technologies, we incorporate the right mix of these trends for every client — balancing aesthetics with performance and accessibility. <a href="/contact">Get in touch</a> to see how we can modernise your digital presence.</p>
     `,
   },
   {
@@ -90,7 +90,7 @@ export const blogs: Blog[] = [
       <h2>Measuring What Matters</h2>
       <p>Keyword rankings are a vanity metric without conversion data alongside. Track organic sessions, goal completions, and revenue attributed to organic search to understand true ROI.</p>
 
-      <p>Dribblu's SEO team combines technical audits, content strategy, and link-building campaigns to deliver measurable, lasting results. <a href="/services/seo">Explore our SEO services</a> or <a href="/contact">contact us today</a>.</p>
+      <p>The Dribblu Technologies SEO team combines technical audits, content strategy, and link-building campaigns to deliver measurable, lasting results. <a href="/services/seo">Explore our SEO services</a> or <a href="/contact">contact us today</a>.</p>
     `,
   },
   {
@@ -130,7 +130,7 @@ export const blogs: Blog[] = [
       <h2>Phase 8: Post-Launch Iteration</h2>
       <p>The launch is the beginning, not the end. Monitor crash reports, user reviews, and analytics. Prioritise the next iteration based on real usage data.</p>
 
-      <p>Dribblu's app development team has shipped apps across fintech, healthcare, e-commerce, and education verticals. <a href="/services/app-development">See what we build</a> or <a href="/contact">start a conversation</a>.</p>
+      <p>The Dribblu Technologies app development team has shipped apps across fintech, healthcare, e-commerce, and education verticals. <a href="/services/app-development">See what we build</a> or <a href="/contact">start a conversation</a>.</p>
     `,
   },
   {
@@ -153,7 +153,7 @@ export const blogs: Blog[] = [
       <p>Your logo must work at any size — from a 16 × 16 px favicon to a 10-metre billboard. A well-designed logo has an icon mark, a wordmark variant, and a stacked version, giving designers flexibility across every medium.</p>
 
       <h2>Colour Psychology</h2>
-      <p>Colours trigger unconscious emotional responses. Orange (like Dribblu's signature <span style="color:#F15A22">#F15A22</span>) communicates energy, creativity, and approachability. Blue conveys trust and stability. Choose colours that align with how you want customers to feel.</p>
+      <p>Colours trigger unconscious emotional responses. Orange (like Dribblu Technologies' signature <span style="color:#F15A22">#F15A22</span>) communicates energy, creativity, and approachability. Blue conveys trust and stability. Choose colours that align with how you want customers to feel.</p>
 
       <h2>Typography as Personality</h2>
       <p>A serif heading font paired with a clean sans-serif body font is a classic combination for a reason — it signals authority while remaining readable. Stick to two or three typefaces maximum; more creates visual noise.</p>
@@ -164,7 +164,7 @@ export const blogs: Blog[] = [
       <h2>Designing for Digital First</h2>
       <p>Most brand interactions now happen on screens. Design in RGB colour spaces, create assets in vector format (SVG), and optimise every graphic for retina displays.</p>
 
-      <p>Dribblu's graphic design team crafts identities that are as strategic as they are beautiful. <a href="/services/graphic-design">View our design services</a> or <a href="/contact">let's create something remarkable together</a>.</p>
+      <p>The Dribblu Technologies graphic design team crafts identities that are as strategic as they are beautiful. <a href="/services/graphic-design">View our design services</a> or <a href="/contact">let's create something remarkable together</a>.</p>
     `,
   },
   {
@@ -198,7 +198,7 @@ export const blogs: Blog[] = [
       <h2>Total Cost of Ownership</h2>
       <p>Subscription fees for premium templates, plugins, and hosting can exceed the cost of a custom build within a few years — without any of the flexibility or ownership benefits.</p>
 
-      <p>Dribblu builds high-performance, fully custom websites for businesses that refuse to settle. <a href="/services/web-design">Explore web design & development</a> or <a href="/contact">request a free quote</a>.</p>
+      <p>Dribblu Technologies builds high-performance, fully custom websites for businesses that refuse to settle. <a href="/services/web-design">Explore web design & development</a> or <a href="/contact">request a free quote</a>.</p>
     `,
   },
   {
@@ -229,7 +229,7 @@ export const blogs: Blog[] = [
       <h2>5. Minimise Third-Party Scripts</h2>
       <p>Every third-party script — analytics, chat widgets, social embeds — adds network requests and execution time. Audit your scripts quarterly. Remove anything that isn't delivering measurable value, and load the rest via a tag manager with a firing condition.</p>
 
-      <p>Dribblu builds performance into every project from day one. If your current site is slow, our technical audit identifies every bottleneck and prioritises fixes by impact. <a href="/contact">Book a free performance review</a>.</p>
+      <p>Dribblu Technologies builds performance into every project from day one. If your current site is slow, our technical audit identifies every bottleneck and prioritises fixes by impact. <a href="/contact">Book a free performance review</a>.</p>
     `,
   },
 ]

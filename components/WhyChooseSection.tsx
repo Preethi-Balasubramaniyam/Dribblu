@@ -33,7 +33,7 @@ export default function WhyChooseSection() {
   return (
     <section
       className="relative pt-24 pb-0 overflow-hidden"
-      aria-label="Why choose Dribblu"
+      aria-label="Why choose Dribblu Technologies"
     >
       {/* Background – phone mockups */}
       <Image
@@ -52,12 +52,12 @@ export default function WhyChooseSection() {
         {/* Section header */}
         <AnimateOnScroll className="text-center mb-14">
           <h2 className="font-heading text-white text-3xl md:text-4xl lg:text-[44px] mb-5">
-            Why Choose Dribblu&nbsp;?
+            Why Choose Dribblu Technologies?
           </h2>
           <p className="font-body text-white text-base md:text-lg font-bold">
-            We&nbsp; are a Web Design Agency With Added
+            A Full-Service Digital Agency With Real
             <br className="hidden md:block" />
-            Value For Your business&nbsp;!
+            Value For Your Business
           </p>
         </AnimateOnScroll>
 

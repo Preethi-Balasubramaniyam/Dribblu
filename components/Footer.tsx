@@ -192,7 +192,7 @@ export default function Footer() {
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-3 flex items-center">
           <p className="font-body text-white text-sm font-medium">
-            &copy; 2025 Dribblu Design All Rights Reserved
+            &copy; 2025 Dribblu Technologies. All Rights Reserved.
           </p>
         </div>
       </div>

@@ -7,9 +7,9 @@ import SeoServices from '@/components/services/SeoServices'
 import bnr3 from '@/assets/services/bnr-3.png'
 
 export const metadata: Metadata = {
-  title: 'SEO Services | Dribblu – Web Design & Digital Agency',
+  title: 'SEO Services | Dribblu Technologies – Digital Agency',
   description:
-    'At Dribblu Design Studio, we help businesses grow their online presence and drive organic traffic through powerful, results-driven SEO strategies.',
+    'At Dribblu Technologies, we help businesses grow their online presence and drive organic traffic through powerful, results-driven SEO strategies.',
 }
 
 export default function SeoPage() {
@@ -22,7 +22,7 @@ export default function SeoPage() {
           bgImage={bnr3}
           description={
             <>
-              At <span className="text-[#F15A22] font-semibold">Dribblu Design Studio</span>, we
+              At <span className="text-[#F15A22] font-semibold">Dribblu Technologies</span>, we
               help businesses grow their online presence and drive organic traffic through powerful,
               results-driven SEO strategies. Our expert team focuses on improving your website&apos;s
               visibility in search engines, increasing your rankings, and ultimately bringing you

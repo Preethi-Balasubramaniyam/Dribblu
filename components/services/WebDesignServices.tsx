@@ -78,7 +78,7 @@ export default function WebDesignServices() {
           >
             <h2 className="font-heading text-[#F15A22] text-3xl md:text-4xl mb-4">Web Design</h2>
             <p className="font-body text-gray-600 text-sm leading-7 mb-8">
-              At <span className="text-[#F15A22] font-semibold">Dribblu Design Studio</span>, we
+              At <span className="text-[#F15A22] font-semibold">Dribblu Technologies</span>, we
               specialise in creating visually stunning, user-friendly, and strategically designed
               websites that leave a lasting impression. Your website is more than a digital
               brochure — it&apos;s your most powerful sales tool, working for you around the clock.
@@ -133,7 +133,7 @@ export default function WebDesignServices() {
               Web Development
             </h2>
             <p className="font-body text-gray-600 text-sm leading-7 mb-8">
-              At <span className="text-[#F15A22] font-semibold">Dribblu Design Studio</span>, we
+              At <span className="text-[#F15A22] font-semibold">Dribblu Technologies</span>, we
               turn ideas into powerful digital products. Our development team builds websites that
               are not only visually compelling but also secure, fast, and engineered to scale. We
               follow clean coding standards, conduct rigorous testing, and optimise for Core Web
@@ -206,7 +206,7 @@ export default function WebDesignServices() {
           }}
         >
           <h2 className="font-heading text-[#F15A22] text-2xl md:text-3xl mb-6">
-            Why Choose Dribblu for Web Design & Development?
+            Why Choose Dribblu Technologies for Web Design & Development?
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[

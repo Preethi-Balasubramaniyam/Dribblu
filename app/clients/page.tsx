@@ -5,9 +5,9 @@ import ScrollToTopButton from '@/components/ScrollToTopButton'
 import ClientsPortfolio from '@/components/clients/ClientsPortfolio'
 
 export const metadata: Metadata = {
-  title: 'Our Clients | Dribblu – Web Design & Digital Agency',
+  title: 'Our Clients | Dribblu Technologies – Digital Agency',
   description:
-    "Explore Dribblu's portfolio of clients spanning web development, UX/UI, logo design, and app development projects.",
+    "Explore Dribblu Technologies' portfolio of clients spanning web development, UX/UI, logo design, and app development projects.",
 }
 
 export default function ClientsPage() {

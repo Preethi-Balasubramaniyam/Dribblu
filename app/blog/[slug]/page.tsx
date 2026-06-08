@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const blog = getBlogBySlug(params.slug)
   if (!blog) return {}
   return {
-    title: `${blog.title} – Dribblu Blog`,
+    title: `${blog.title} – Dribblu Technologies Blog`,
     description: blog.excerpt,
     alternates: { canonical: `https://dribblu.com/blog/${blog.slug}` },
   }
@@ -142,7 +142,7 @@ export default function BlogDetailPage({ params }: Props) {
             Want results like these for your business?
           </h2>
           <p className="font-body text-gray-600 text-base mb-8">
-            Dribblu delivers custom web design, SEO, app development, and
+            Dribblu Technologies delivers custom web design, SEO, app development, and
             graphic design — all under one roof.
           </p>
           <Link

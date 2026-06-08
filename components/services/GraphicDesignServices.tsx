@@ -12,7 +12,7 @@ const services = [
     id: 1,
     title: 'Logo Design',
     description:
-      "Your logo is the face of your brand — it needs to be unforgettable. At Dribblu, we craft unique, meaningful logos that encapsulate your brand's personality, values, and vision. Our logo design process involves in-depth research into your industry, target audience, and competitors to produce a mark that genuinely sets you apart. We deliver versatile logo packages in all required formats (SVG, PNG, EPS) with full brand ownership.",
+      "Your logo is the face of your brand — it needs to be unforgettable. At Dribblu Technologies, we craft unique, meaningful logos that encapsulate your brand's personality, values, and vision. Our logo design process involves in-depth research into your industry, target audience, and competitors to produce a mark that genuinely sets you apart. We deliver versatile logo packages in all required formats (SVG, PNG, EPS) with full brand ownership.",
     image: img1,
     imgAlt: 'Logo design mockup',
     imageRight: true,
@@ -92,7 +92,7 @@ export default function GraphicDesignServices() {
           }}
         >
           <p className="font-body text-gray-600 text-sm leading-7">
-            At <span className="text-[#F15A22] font-semibold">Dribblu Design Studio</span>, graphic design is about far more than aesthetics. Every colour choice, typeface, and composition decision communicates something about your brand. Our design team blends creativity with strategic thinking to produce visuals that not only look exceptional but also reinforce your brand identity and support your business objectives.
+            At <span className="text-[#F15A22] font-semibold">Dribblu Technologies</span>, graphic design is about far more than aesthetics. Every colour choice, typeface, and composition decision communicates something about your brand. Our design team blends creativity with strategic thinking to produce visuals that not only look exceptional but also reinforce your brand identity and support your business objectives.
           </p>
         </AnimateOnScroll>
 

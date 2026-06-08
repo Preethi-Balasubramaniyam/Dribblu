@@ -27,7 +27,7 @@ export default function HomePage() {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Organization',
-            name: 'Dribblu Design',
+            name: 'Dribblu Technologies',
             url: 'https://dribblu.com',
             contactPoint: {
               '@type': 'ContactPoint',

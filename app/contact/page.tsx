@@ -7,9 +7,9 @@ import ContactForm from '@/components/contact/ContactForm'
 import ContactMap from '@/components/contact/ContactMap'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Dribblu – Web Design & Digital Agency',
+  title: 'Contact Us | Dribblu Technologies – Digital Agency',
   description:
-    'Get in touch with Dribblu Designs. We are available Mon–Sat 9:30 am – 6:30 pm. Drop us a line and we will get back to you within 24 hours.',
+    'Get in touch with Dribblu Technologies. We are available Mon–Sat 9:30 am – 6:30 pm. Drop us a line and we will get back to you within 24 hours.',
 }
 
 export default function ContactPage() {

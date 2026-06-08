@@ -5,14 +5,14 @@ import BlogPostTemplate from '@/components/blog/BlogPostTemplate'
 const blog = getBlogBySlug('custom-website-business-2026')!
 
 export const metadata: Metadata = {
-  title: `${blog.title} – Dribblu Blog`,
+  title: `${blog.title} – Dribblu Technologies Blog`,
   description: blog.excerpt,
   alternates: { canonical: 'https://dribblu.com/blog/custom-website-business-2026' },
   openGraph: {
     title: blog.title,
     description: blog.excerpt,
     type: 'article',
-    siteName: 'Dribblu',
+    siteName: 'Dribblu Technologies',
   },
 }
 

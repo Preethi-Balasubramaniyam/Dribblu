@@ -88,7 +88,7 @@ export default function SeoServices() {
           }}
         >
           <p className="font-body text-gray-600 text-sm leading-7">
-            At <span className="text-[#F15A22] font-semibold">Dribblu Design Studio</span>, SEO is not a one-time task — it&apos;s an ongoing investment in long-term organic growth. We combine technical expertise, content strategy, and authoritative link building to improve your search engine visibility, drive qualified traffic, and ultimately grow your revenue without relying entirely on paid advertising.
+            At <span className="text-[#F15A22] font-semibold">Dribblu Technologies</span>, SEO is not a one-time task — it&apos;s an ongoing investment in long-term organic growth. We combine technical expertise, content strategy, and authoritative link building to improve your search engine visibility, drive qualified traffic, and ultimately grow your revenue without relying entirely on paid advertising.
           </p>
         </AnimateOnScroll>
 
@@ -123,7 +123,7 @@ export default function SeoServices() {
             }}
           >
             <h2 className="font-heading text-[#F15A22] text-2xl md:text-3xl mb-6">
-              Why SEO with Dribblu Design Studio?
+              Why SEO with Dribblu Technologies?
             </h2>
             <ul className="space-y-6">
               {whyPoints.map((pt) => (

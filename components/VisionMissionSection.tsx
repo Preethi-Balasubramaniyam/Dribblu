@@ -38,7 +38,7 @@ export default function VisionMissionSection() {
           >
             <h2 className="font-heading text-[#F15A22] text-2xl mb-5">Our Vision</h2>
             <p className="font-body text-gray-700 text-sm leading-8">
-              At <span className="text-[#F15A22] font-semibold">DRIBBLU</span>, our vision is to
+              At <span className="text-[#F15A22] font-semibold">Dribblu Technologies</span>, our vision is to
               empower businesses across the globe to achieve remarkable digital growth. We strive
               to be the leading force in SEO shaping a future where brands can seamlessly connect
               with their audiences through cutting-edge strategies and measurable success.

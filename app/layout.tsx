@@ -16,9 +16,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Dribblu – Creative Web Design & Digital Innovation',
+  title: 'Dribblu Technologies – Creative Web Design & Digital Innovation',
   description:
-    'Dribblu is a professional website design & development company delivering innovative digital solutions – SEO, UI/UX, app development, graphic design and brochure design at affordable cost.',
+    'Dribblu Technologies is a professional website design & development company delivering innovative digital solutions — SEO, UI/UX, app development, graphic design, and digital marketing at competitive value.',
   keywords: [
     'web design company',
     'web development company',
@@ -26,21 +26,21 @@ export const metadata: Metadata = {
     'UI/UX design',
     'app development',
     'digital marketing',
-    'Dribblu',
+    'Dribblu Technologies',
   ],
-  authors: [{ name: 'Dribblu Design' }],
+  authors: [{ name: 'Dribblu Technologies' }],
   openGraph: {
-    title: 'Dribblu – Creative Web Design & Digital Innovation',
+    title: 'Dribblu Technologies – Creative Web Design & Digital Innovation',
     description:
-      'Partner with Dribblu for expert web design, development and SEO services. Contact us today.',
+      'Partner with Dribblu Technologies for expert web design, development, and SEO services. Contact us today.',
     type: 'website',
-    siteName: 'Dribblu',
+    siteName: 'Dribblu Technologies',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dribblu – Creative Web Design & Digital Innovation',
+    title: 'Dribblu Technologies – Creative Web Design & Digital Innovation',
     description:
-      'Partner with Dribblu for expert web design, development and SEO services.',
+      'Partner with Dribblu Technologies for expert web design, development, and SEO services.',
   },
   robots: { index: true, follow: true },
 }

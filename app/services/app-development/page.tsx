@@ -7,9 +7,9 @@ import AppDevServices from '@/components/services/AppDevServices'
 import bnr4 from '@/assets/services/bnr-4.jpg'
 
 export const metadata: Metadata = {
-  title: 'App Development | Dribblu – Web Design & Digital Agency',
+  title: 'App Development | Dribblu Technologies – Digital Agency',
   description:
-    'At Dribblu Design Studio, we create custom mobile applications that deliver seamless user experiences, high performance, and real business impact.',
+    'At Dribblu Technologies, we create custom mobile applications that deliver seamless user experiences, high performance, and real business impact.',
 }
 
 export default function AppDevelopmentPage() {
@@ -22,7 +22,7 @@ export default function AppDevelopmentPage() {
           bgImage={bnr4}
           description={
             <>
-              At <span className="text-[#F15A22] font-semibold">Dribblu Design Studio</span>, we
+              At <span className="text-[#F15A22] font-semibold">Dribblu Technologies</span>, we
               create custom mobile applications that deliver seamless user experiences, high
               performance, and real business impact. Whether you&apos;re launching a new product,
               extending your digital presence, or streamlining internal operations, our app

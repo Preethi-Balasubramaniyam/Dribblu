@@ -163,7 +163,7 @@ export default function BlogPostTemplate({ blog }: { blog: Blog }) {
             Want results like these for your business?
           </h2>
           <p className="font-body text-gray-600 text-base mb-8">
-            Dribblu delivers custom web design, SEO, app development, and graphic
+            Dribblu Technologies delivers custom web design, SEO, app development, and graphic
             design — all under one roof.
           </p>
           <Link

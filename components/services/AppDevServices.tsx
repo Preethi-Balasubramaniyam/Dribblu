@@ -73,7 +73,7 @@ export default function AppDevServices() {
           }}
         >
           <p className="font-body text-gray-600 text-sm leading-7">
-            At <span className="text-[#F15A22] font-semibold">Dribblu Design Studio</span>, we build mobile and web applications that people actually want to use. Every app we create starts with a deep understanding of your users — their needs, behaviours, and pain points — then translates that understanding into a product that is fast, intuitive, and reliable. We work with startups, established businesses, and enterprises across a wide range of industries.
+            At <span className="text-[#F15A22] font-semibold">Dribblu Technologies</span>, we build mobile and web applications that people actually want to use. Every app we create starts with a deep understanding of your users — their needs, behaviours, and pain points — then translates that understanding into a product that is fast, intuitive, and reliable. We work with startups, established businesses, and enterprises across a wide range of industries.
           </p>
         </AnimateOnScroll>
 

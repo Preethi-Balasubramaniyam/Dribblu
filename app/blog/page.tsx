@@ -4,9 +4,9 @@ import Image from 'next/image'
 import { blogs } from '@/lib/blog-data'
 
 export const metadata: Metadata = {
-  title: 'Blog – Dribblu Design',
+  title: 'Blog – Dribblu Technologies',
   description:
-    'Insights on web design, SEO, app development, and graphic design from the Dribblu team.',
+    'Insights on web design, SEO, app development, and graphic design from the Dribblu Technologies team.',
   alternates: { canonical: 'https://dribblu.com/blog' },
 }
 
@@ -153,7 +153,7 @@ export default function BlogListingPage() {
             Ready to grow your digital presence?
           </h2>
           <p className="font-body text-gray-600 text-base mb-8">
-            Let Dribblu handle your web design, SEO, app development, and brand
+            Let Dribblu Technologies handle your web design, SEO, app development, and brand
             identity — so you can focus on what you do best.
           </p>
           <Link

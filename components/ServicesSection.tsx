@@ -126,7 +126,7 @@ export default function ServicesSection() {
           <h2 className="font-heading text-gray-900 text-3xl md:text-4xl lg:text-[40px]">
             Start Your Creative Business
             <br />
-            With Dribblu
+            With Dribblu Technologies
           </h2>
         </AnimateOnScroll>
 

@@ -28,7 +28,7 @@ export default function BlogsSection() {
           </h2>
           <p className="font-body text-gray-500 text-base max-w-lg mx-auto">
             Expert articles on web design, SEO, app development, and graphic
-            design — straight from the Dribblu team.
+            design — straight from the Dribblu Technologies team.
           </p>
         </AnimateOnScroll>
 

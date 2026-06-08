@@ -13,15 +13,15 @@ const testimonials = [
     rating: 5,
   },
   {
-    text: 'Working with Dribblu has been an exceptional experience. Their team is professional, creative, and always delivers on time. Highly recommend!',
+    text: 'Working with Dribblu Technologies has been an exceptional experience. Their team is professional, creative, and always delivers on time. Highly recommend!',
     rating: 5,
   },
   {
-    text: 'Dribblu transformed our online presence completely. The website they built is fast, beautiful, and ranks well on search engines.',
+    text: 'Dribblu Technologies transformed our online presence completely. The website they built is fast, beautiful, and ranks well on search engines.',
     rating: 5,
   },
   {
-    text: 'The team at Dribblu understood our vision and brought it to life. Outstanding design and seamless development execution.',
+    text: 'The team at Dribblu Technologies understood our vision and brought it to life. Outstanding design and seamless development execution.',
     rating: 5,
   },
 ]
@@ -82,7 +82,7 @@ export default function TestimonialsSection() {
           <div className="absolute inset-0">
             <Image
               src={peopleImage}
-              alt="Happy Dribblu clients"
+              alt="Happy Dribblu Technologies clients"
               fill
               className="object-contain"
               sizes="100vw"
